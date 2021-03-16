@@ -1,0 +1,37 @@
+// $header: #436372;
+// $hover: #a3bbc8;
+// $footer:#7b7b7b;
+// $title:#191919;
+// $border:#f6f6f6;
+
+
+%gelion-700 {
+    font-family: 'Gelion-Bold';
+    font-weight: 700;
+}
+
+%gelion-400 {
+    font-family: 'Gelion-Regular';
+    font-weight: 400;
+}
+
+%gelion-500 {
+    font-family: 'Gelion-Medium';
+    font-weight: 500;
+}
+
+%redhat-300 {
+    font-family: 'RedHatDisplay-Bold';
+    font-weight: 700;
+}
+
+
+
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
+
