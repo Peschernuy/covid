@@ -16,6 +16,14 @@
          url('../fonts/Gelion-Medium.woff') format('woff');    
 }
 @font-face {
+  font-family: 'Gelion-SemiBold';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/Gelion-SemiBold.woff') format('woff2'),
+    url('../fonts/Gelion-SemiBold.woff') format('woff');
+}
+@font-face {
     font-family: 'Gelion-Bold';
     font-weight: 700;
     font-style: normal;

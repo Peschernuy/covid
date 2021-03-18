@@ -122,12 +122,10 @@
 .quarantine{
   background-image: url('../images/quarantine-bg.png');
   background-repeat: no-repeat;
-  background-size: 55%;
-  background-position: right;
-  margin-bottom: 102px;
-  padding-top: 256px;
+  background-position: right ;
+  height: 1160px;
   &__inner{
-    padding: 264px 0 105px 0;
+    padding-top: 400px;
   }
   &__subtitle{
     @extend %redhat-700;
@@ -169,7 +167,58 @@
 }
 
 
+.coronavirus{
+   background-image: url('../images/coronavirus-bg.png');
+   background-repeat: no-repeat;
+   background-position: left;
+   height: 650px;
+   margin-bottom: 100px;
+   &__inner{
+     max-width: 650px;
+     float: right;
+     margin-top: 100px;
 
+   }
+   &__subtitle {
+     @extend %redhat-700;
+     font-size: 29px;
+     line-height: 124%;
+     color: #FA5652;
+     margin-bottom: 15px;
+   }
+
+   &__title {
+     @extend %redhat-700;
+     font-size: 52px;
+     line-height: 139%;
+     text-transform: capitalize;
+     color: #035755;
+     max-width: 625px;
+     margin-bottom: 35px;
+   }
+
+   &__text {
+     @extend %gelion-400;
+     font-size: 20px;
+     line-height: 215%;
+     text-transform: capitalize;
+     color: #4B4F51;
+     max-width: 640px;
+     margin-bottom: 50px;
+   }
+
+   &__link {
+     padding: 21px 49px 23px 51px;
+     background: rgba(250, 86, 82, 0.15);
+     border-radius: 65px;
+     font-size: 20px;
+     line-height: 24px;
+     text-transform: capitalize;
+     color: #FA5652;
+     @extend %gelion-600;
+   }
+
+}
 
 
 
