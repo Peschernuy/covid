@@ -173,10 +173,32 @@
    background-position: left;
    height: 650px;
    margin-bottom: 100px;
+   position: relative;
+   &::after{
+     position: absolute;
+     content: '';
+     background-image: url('../images/coronavs.png');
+     background-repeat: no-repeat;
+     height: 135px;
+     width: 135px;
+     right: 20px;
+     bottom: -200px;
+   }
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url('../images/coronsvb.png');
+      background-repeat: no-repeat;
+      height: 300px;
+      width: 150px;
+      right: 0;
+      bottom: -85px;
+    }
    &__inner{
      max-width: 650px;
      float: right;
      margin-top: 100px;
+    
 
    }
    &__subtitle {
@@ -221,7 +243,78 @@
 }
 
 
+.contagion{
+  
+   &__inner{
+    text-align: center;
+    margin-bottom: 106px;
+   }
+   &__subtitle {
+     @extend %redhat-700;
+     font-size: 29px;
+     line-height: 124%;
+     color: #FA5652;
+     margin-bottom: 10px;
+   }
 
+   &__title {
+     @extend %redhat-700;
+     font-size: 48px;
+     line-height: 139%;
+     text-transform: capitalize;
+     color: #035755;
+     margin-bottom: 30px;
+   }
+
+   &__text {
+     @extend %gelion-400;
+     font-size: 20px;
+     line-height: 215%;
+     text-transform: capitalize;
+     color: #4B4F51;
+     max-width: 550px;
+     margin: 0 auto;
+     margin-bottom: 50px;
+   }
+   &__content{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 30px;
+   }
+   &__box{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     height: 575px;
+     max-width: 460px;
+     box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.11);
+     border-radius: 10px;
+    &-img{
+      margin-top: 65px;
+      margin-bottom: 55px;
+      height: 260px;
+      max-width: 270px;
+      width: 100%;
+      
+    }
+    &-title{
+      margin-bottom: 13px;
+      font-size: 36px;
+      line-height: 147%;
+      @extend %gelion-500;
+      color: #035755;
+    }
+    &-text{
+      max-width: 355px;
+      font-size: 18px;
+      line-height: 185%;
+      @extend %gelion-400;
+      color: #4B4F51;
+
+    }
+   }
+}
 
 
 
