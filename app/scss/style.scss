@@ -347,7 +347,7 @@
   }
   &__title{
     @extend %redhat-700;
-    font-size: 48px;
+    font-size: 50px;
     line-height: 139%;
     text-transform: capitalize;
     color: #035755;
@@ -392,6 +392,233 @@
     
   }
 }
+
+
+.prevention{
+  text-align: center;
+  &__subtitle {
+    @extend %redhat-700;
+    font-size: 29px;
+    line-height: 124%;
+    color: #FA5652;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    @extend %redhat-700;
+    font-size: 50px;
+    line-height: 139%;
+    text-transform: capitalize;
+    color: #035755;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    @extend %gelion-400;
+    font-size: 18px;
+    line-height: 215%;
+    text-transform: capitalize;
+    color: #4B4F51;
+    max-width: 650px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+
+  }
+
+  &__mask{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    max-width: 1240px;
+    margin: 0 auto;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: '';
+      background-image: url('../images/mask-side.png');
+      background-repeat: no-repeat;
+      height: 290px;
+      width: 150px;
+      top: 350px;
+      left: -332px;
+    }
+    &-top{
+      margin-top: 165px;
+    }
+    &-title{
+      @extend %gelion-500;
+      font-size: 47px;
+      line-height: 147%;
+      text-transform: capitalize;
+      color: #035755;
+      margin-bottom: 20px;
+      position: relative;
+      &::before{
+        position: absolute;
+        content: '';
+        background-image: url('../images/mask-number.png');
+        background-repeat: no-repeat;
+        height: 75px;
+        width: 75px;
+        top: -7px;
+        left: -100px;
+      }
+    }
+    &-text{
+       @extend %gelion-400;
+       font-size: 18px;
+       line-height: 221%;
+       text-transform: capitalize;
+       color: #4B4F51;
+       max-width: 556px;
+    }
+  }
+
+  &__hands{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    max-width: 1325px;
+   
+
+    &-top {
+      margin-top: 165px;
+    }
+
+    &-title {
+      @extend %gelion-500;
+      font-size: 47px;
+      line-height: 147%;
+      text-transform: capitalize;
+      color: #035755;
+      margin-bottom: 20px;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: '';
+        background-image: url('../images/hands-number.png');
+        background-repeat: no-repeat;
+        height: 75px;
+        width: 75px;
+        top: -7px;
+        left: -100px;
+      }
+    }
+
+    &-text {
+      @extend %gelion-400;
+      font-size: 18px;
+      line-height: 221%;
+      text-transform: capitalize;
+      color: #4B4F51;
+      max-width: 490px;
+    }
+  }
+
+  &__nose{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    max-width: 1240px;
+    margin: 0 auto;
+
+    &-top {
+      margin-top: 165px;
+    }
+
+    &-title {
+      @extend %gelion-500;
+      font-size: 47px;
+      line-height: 147%;
+      text-transform: capitalize;
+      color: #035755;
+      margin-bottom: 20px;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: '';
+        background-image: url('../images/nose-number.png');
+        background-repeat: no-repeat;
+        height: 75px;
+        width: 75px;
+        top: -7px;
+        left: -100px;
+      }
+    }
+
+    &-text {
+      @extend %gelion-400;
+      font-size: 18px;
+      line-height: 221%;
+      text-transform: capitalize;
+      color: #4B4F51;
+      max-width: 556px;
+    }
+  }
+
+
+&__avoid{
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  max-width: 1360px;
+  position: relative;
+  &::after{
+    position: absolute;
+    content: '';
+    background-image: url('../images/avoid-side.png');
+    background-repeat: no-repeat;
+    height: 475px;
+    width: 160px;
+    top: 0;
+    right: -312px;
+  }
+
+  &-top {
+    margin-top: 165px;
+  }
+
+  &-title {
+    @extend %gelion-500;
+    font-size: 47px;
+    line-height: 147%;
+    text-transform: capitalize;
+    color: #035755;
+    margin-bottom: 20px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url('../images/avoid-number.png');
+      background-repeat: no-repeat;
+      height: 75px;
+      width: 75px;
+      top: -7px;
+      left: -100px;
+    }
+  }
+
+  &-text {
+    @extend %gelion-400;
+    font-size: 18px;
+    line-height: 221%;
+    text-transform: capitalize;
+    color: #4B4F51;
+    max-width: 556px;
+  }
+}
+
+
+}
+
+
+
+
+
+
 
 
 
