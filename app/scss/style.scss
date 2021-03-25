@@ -280,6 +280,17 @@
      display: grid;
      grid-template-columns: repeat(3, 1fr);
      grid-gap: 30px;
+     position: relative;
+     &::before{
+       position: absolute;
+       content: '';
+       background-image: url('../images/contagion-side.png');
+       background-repeat: no-repeat;
+       height: 260px;
+       width: 140px;
+       left: -140px;
+       bottom: 0;
+     }
    }
    &__box{
      display: flex;
@@ -290,6 +301,10 @@
      max-width: 460px;
      box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.11);
      border-radius: 10px;
+     &:hover{
+       border-bottom: solid 6px #FB4C47;
+       transition: all 0.2s;
+     }
     &-img{
       margin-top: 65px;
       margin-bottom: 55px;
@@ -318,7 +333,65 @@
 
 
 
+.symptoms{
+  padding: 50px 0 120px 0;
+  &__inner{
+   text-align: center;
+  }
+  &__subtitle{
+    @extend %redhat-700;
+    font-size: 29px;
+    line-height: 124%;
+    color: #FA5652;
+    margin-bottom: 20px;
+  }
+  &__title{
+    @extend %redhat-700;
+    font-size: 48px;
+    line-height: 139%;
+    text-transform: capitalize;
+    color: #035755;
+    margin-bottom: 30px;
+  }
+  &__text{
+      @extend %gelion-400;
+      font-size: 18px;
+      line-height: 215%;
+      text-transform: capitalize;
+      color: #4B4F51;
+      max-width: 716px;
+      margin: 0 auto;
+      
+  }
+  &__bg{
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url('../images/symptoms-left.png');
+      background-repeat: no-repeat;
+      height: 130px;
+      width: 170px;
+      left: -120px;
+      bottom: 190px;
+    }
+    &::after{
+      position: absolute;
+      content: '';
+      background-image: url('../images/symptoms-right.png');
+      background-repeat: no-repeat;
+      height: 180px;
+      width: 225px;
+      right: -100px;
+      bottom: 0;
+    }
+  }
 
+  &__img{
+    margin: 0 auto;
+    
+  }
+}
 
 
 
